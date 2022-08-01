@@ -1,5 +1,5 @@
 {% set name = "geoserver-restconfig" %}
-{% set version = "2.0.7" %}
+{% set version = "2.0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/GeoNode/{{ name }}/releases/download/{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a36aa25668eaa70577db9c15546f3132c76e8726426642c7c06f062d314b875b
+  sha256: 91921b8b2eb98d4b26361f9ff596880950e6e92fd4329092e00263e0c415939f
 
 build:
   noarch: python
@@ -35,8 +35,8 @@ test:
 
 about:
   home: https://github.com/GeoNode/geoserver-restconfig
-  summary: 'GeoServer REST Configuration'
-  description: 'A python library for manipulating a GeoServer instance via the GeoServer RESTConfig API.'
+  summary: GeoServer REST Configuration
+  description: A python library for manipulating a GeoServer instance via the GeoServer RESTConfig API.
   license: BSD-2-Clause
   license_family: BSD
   license_file: LICENSE.txt
