@@ -1,11 +1,11 @@
-About geoserver-restconfig
-==========================
+About geoserver-restconfig-feedstock
+====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geoserver-restconfig-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/GeoNode/geoserver-restconfig
 
 Package license: BSD-2-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geoserver-restconfig-feedstock/blob/main/LICENSE.txt)
 
 Summary: GeoServer REST Configuration
 
