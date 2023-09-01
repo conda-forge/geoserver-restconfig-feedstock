@@ -1,5 +1,5 @@
 {% set name = "geoserver-restconfig" %}
-{% set version = "2.0.8" %}
+{% set version = "2.0.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/GeoNode/{{ name }}/releases/download/{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 91921b8b2eb98d4b26361f9ff596880950e6e92fd4329092e00263e0c415939f
+  sha256: dce9c8461e3e9d692466ffe9234553c0bba7e54202651889742a47124ba6dfea
 
 build:
   noarch: python
