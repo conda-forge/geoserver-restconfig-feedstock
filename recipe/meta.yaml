@@ -1,17 +1,14 @@
 {% set name = "geoserver-restconfig" %}
 {% set version = "2.0.9" %}
+{% set package_dir = "e8/1e/073ea55347ee701498e11c8f2a2ed65aa2e663ff8992c3afbbefae289c48" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
-source:
-  url: https://github.com/GeoNode/{{ name }}/releases/download/{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: dce9c8461e3e9d692466ffe9234553c0bba7e54202651889742a47124ba6dfea
-
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install -vv https://files.pythonhosted.org/packages/{{package_dir}}/{{name}}-{{veresion}}-py3-none-any.whl
   number: 0
 
 requirements:
