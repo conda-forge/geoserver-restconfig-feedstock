@@ -8,7 +8,7 @@ package:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install -vv https://files.pythonhosted.org/packages/{{package_dir}}/{{name}}-{{veresion}}-py3-none-any.whl
+  script: {{ PYTHON }} -m pip install -vv https://files.pythonhosted.org/packages/{{ package_dir }}/{{ name }}-{{ version }}-py3-none-any.whl
   number: 0
 
 requirements:
