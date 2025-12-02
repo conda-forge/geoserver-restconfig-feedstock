@@ -1,6 +1,6 @@
 {% set name = "geoserver-restconfig" %}
-{% set version = "2.0.9" %}
-{% set package_dir = "e8/1e/073ea55347ee701498e11c8f2a2ed65aa2e663ff8992c3afbbefae289c48" %}
+{% set version = "2.0.15" %}
+{% set package_dir = "cb/ed/7fb361a0c9e34a3349501515901e7716de67881c939ac2527605a0cee7d1" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +9,7 @@ package:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install -vv https://files.pythonhosted.org/packages/{{ package_dir }}/geoserver_restconfig-{{ version }}-py3-none-any.whl
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -19,10 +19,9 @@ requirements:
   run:
     - python >={{ python_min }}
     - future
-    - requests
-    - six
-    - gisdata
-    - urllib3 <2.0
+    - requests >=2.14.0
+    - six >=1.12.0
+    - gisdata >=0.5.4
 
 test:
   imports:
